@@ -1,11 +1,17 @@
 /* GLOBAL STyle*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Sanchez", serif;
   background-color: #c9c0af;
   color: #070606;
+  overflow-x: hidden;
   margin: 0;
   padding: 0;
-  overflow: hidden;
 }
 
 h2,
