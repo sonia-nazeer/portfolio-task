@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sansita+One&family=Sanchez&display=swap" rel="stylesheet"/>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"/>
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"  rel="stylesheet" />
+    <!-- swiper css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="index.css" />
+    <!-- emailjs -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js" > </script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "XP0WyvZ86lZc2AMK0",
+        });
+      })();
+    </script>
+  </head>
+
+  <body>
+    <header>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark custom-nav" data-aos="fade-down">
+      <div class="container">
+        <a class="navbar-brand logo" href="#about">Sonia Nazeer</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+          <button id="themeToggle" class="btn btn-outline-secondary btn-sm">🌙 Dark Mode</button>
+        </div>
+      </div>
+    </nav>
+   </header>
+  <main>
+    <!-- About Section -->
+    <section id="about" class="hero-section">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6 hero-text" data-aos="fade-right">
+            <h2>About Me</h2>
+            <p>
+              A Full Stack Web Developer with hands-on experience in building
+              responsive, dynamic web applications using MERN and PHP/MySQL
+              stacks. Proficient in React.js, Node.js, Express, MongoDB, PHP,
+              MySQL, and tools like Git, Postman, XAMPP, and WAMP. I hold a
+              Master’s degree in Computer Science from Virtual University and
+              also completed an MA in English Language Teaching, which enhances
+              my communication and teamwork skills.
+            </p>
+            <p>
+              My mission is to solve real-world problems using technology while
+              continuously learning and growing as a developer. Let's
+              collaborate and build something amazing together!
+            </p>
+          </div>
+          <div class="col-md-6 text-center hero-img"  data-aos="fade-left">
+            <img
+              src="images/Home-profile.jpg"
+              alt="Sonia Nazeer"
+              class="profile-img"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+      <div class="container">
+        <h2 class="section-title text-center"  data-aos="fade-up">My <span>Skills</span></h2>
+        <div class="row mt-4">
+          <div class="col-md-4 mb-4"data-aos="zoom-in" data-aos-delay="100">
+            <div class="skill-card">
+              <i class="bi bi-code-slash"></i>
+              <h4>Frontend</h4>
+              <p>HTML5, CSS3, JavaScript, Bootstrap, React.js</p>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4"data-aos="zoom-in" data-aos-delay="200">
+            <div class="skill-card">
+              <i class="bi bi-hdd-network"></i>
+              <h4>Backend</h4>
+              <p>Node.js, Express.js, PHP</p>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4"data-aos="zoom-in" data-aos-delay="300">
+            <div class="skill-card">
+              <i class="bi bi-database"></i>
+              <h4>Database</h4>
+              <p>MongoDB, MySQL</p>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4" data-aos="zoom-in" data-aos-delay="400">
+            <div class="skill-card">
+              <i class="bi bi-git"></i>
+              <h4>Version Control</h4>
+              <p>Git, GitHub</p>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4"data-aos="zoom-in" data-aos-delay="500">
+            <div class="skill-card">
+              <i class="bi bi-link-45deg"></i>
+              <h4>APIs</h4>
+              <p>REST APIs, JWT Authentication</p>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4"data-aos="zoom-in" data-aos-delay="600">
+            <div class="skill-card">
+              <i class="bi bi-laptop"></i>
+              <h4>Other</h4>
+              <p>Responsive UI/UX, Deployment, Testing</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+      <div class="container">
+        <h2 class="section-title text-center"data-aos="fade-up">My <span>Projects</span></h2>
+        <div class="row mt-5">
+          <div class="col-md-6 col-lg-4 mb-4"data-aos="fade-right">
+            <div class="project-card">
+              <img
+                src="images/project1.jpg"
+                alt="Project 1"
+                class="img-fluid"
+              />
+              <h4>E-Commerce Website</h4>
+              <p>
+                Multi-vendor marketplace with authentication, shopping cart, and
+                dashboard features.
+                <a
+                  href=" https://github.com/sonia-nazeer/personal-portfolio-react"
+                  target="_blank"
+                  >GitHub Link</a
+                >
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-4"data-aos="fade-up">
+            <div class="project-card">
+              <img
+                src="images/project3.jpg" alt="Project 2" class="img-fluid"
+              />
+              <h4>Portfolio Website</h4>
+              <p>
+                Responsive portfolio showcasing skills, projects, and a contact
+                form with clean design.
+                <a
+                  href=" https://github.com/sonia-nazeer/personal-portfolio-react"
+                  target="_blank" > 
+                  GitHub Link
+                </a>
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-4"data-aos="fade-left">
+            <div class="project-card">
+              <img src="images/project2.jpg" alt="Project 3" class="img-fluid"/>
+              <h4>final Year Project</h4>
+              <p>
+                Content management system with CRUD features, authentication,
+                and user comments.
+                <a href="https://github.com/sonia-nazeer/eco-trade-hub-online-marketplace-used-auto-parts" target="_blank" >GitHub Link</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+<!-- Certificates Section -->
+<section id="certificates" class="certificates-section py-5">
+  <div class="container" data-aos="fade-up" data-aos-duration="1000">
+    <h2 class="section-title mb-4 text-center">Certificates</h2>
+
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-12">
+        <!-- Swiper Container -->
+        <div class="swiper myCertificates">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="images/certificate.jpg" class="img-fluid certificate-img" alt="Certificate 1">
+            </div>
+            <div class="swiper-slide">
+              <img src="images/certificate.jpg" class="img-fluid certificate-img" alt="Certificate 2">
+            </div>
+            <div class="swiper-slide">
+              <img src="images/certificate.jpg" class="img-fluid certificate-img" alt="Certificate 3">
+            </div>
+            <div class="swiper-slide">
+              <img src="images/certificate.jpg" class="img-fluid certificate-img" alt="Certificate 4">
+            </div>
+            <div class="swiper-slide">
+              <img src="images/certificate.jpg" class="img-fluid certificate-img" alt="Certificate 5">
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section py-5">
+      <div class="container">
+        <h2 class="text-center section-heading mb-5"  data-aos="fade-up">Contact</h2>
+        <div class="row align-items-start g-5">
+          <div class="col-lg-5">
+            <div class="contact-info">
+              <h3 class="contact-title">Contact Me</h3>
+              <p class="lead mb-4">
+                Feel free to reach out by filling this form.
+              </p>
+              <hr />
+              <p class="small text-muted">
+                I'll get back to you as soon as possible.
+              </p>
+              <hr />
+              <p class="small text-muted">phone: +92 300 1234567</p>
+              <hr />
+              <p class="small text-muted">Email: sonianazeer@gmail.com</p>
+              <hr />
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="col-lg-7" data-aos="fade-left">
+            <form id="contactForm" novalidate>
+              <div class="row g-4">
+                <div class="col-md-6"data-aos="zoom-in" data-aos-delay="100">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="name"
+                    name="name"
+                    placeholder="Name"
+                    required
+                  />
+                  <div class="invalid-feedback">Please enter your name.</div>
+                </div>
+
+                <div class="col-md-6"  data-aos="zoom-in" data-aos-delay="200">
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    name="email"
+                    placeholder="Email"
+                    required
+                  />
+                  <div class="invalid-feedback">
+                    Please enter a valid email.
+                  </div>
+                </div>
+
+                <div class="col-12" data-aos="zoom-in" data-aos-delay="300">
+                  <textarea
+                    class="form-control"
+                    id="message"
+                    rows="5"
+                    name="message"
+                    placeholder="Message"
+                    required
+                  ></textarea>
+                  <div class="invalid-feedback">Please enter your message.</div>
+                </div>
+                <div class="col-12"data-aos="fade-up" data-aos-delay="400">
+                   <button type="submit" class="btn btn-submit w-100">
+                      Send Message
+                    </button>
+                 </div>
+
+<!-- Captcha Section -->
+<div class="col-12 mt-4 text-center"data-aos="fade-up" data-aos-delay="500">
+  <label for="captchaInput" class="form-label d-block fw-bold">Captcha Verification</label>
+
+  <div class="d-flex justify-content-center align-items-center flex-wrap gap-3">
+    <canvas   
+     id="captchaCanvas" class="border rounded shadow-sm" width="150" height="50">
+    </canvas>
+
+    <input  
+    type="text"  id="captchaInput" class="form-control"   placeholder="Enter captcha" required style="max-width: 200px;" />
+      <button 
+      type="button"   id="refreshCaptcha"   class="btn btn-outline-dark btn-lg">
+        Refresh
+     </button>
+  </div>
+
+    <div class="invalid-feedback mt-2">Please enter the correct captcha.</div>
+          </div>
+            </form>
+            <div id="successMessage" class="alert alert-success mt-4 d-none">
+              Thank you! Your message has been sent successfully.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+</main>
+    <!-- Footer -->
+    <footer class="footer py-4"  data-aos="fade-up">
+      <div class="container">
+        <div class="row align-items-center">
+          <!-- Left Side: Social Icons -->
+          <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+            <div class="footer-icons">
+              <a href="https://www.linkedin.com/in/sonia-nazeer-aba72b280/" target="_blank" >
+                <i class="bi bi-facebook"></i>
+              </a>
+              <a href="https://github.com/sonia-nazeer" target="_blank">
+                <i class="bi bi-twitter"></i>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/sonia-nazeer-aba72b280/" target="_blank" >
+                <i class="bi bi-linkedin"></i>
+              </a>
+              <a href="https://github.com/sonia-nazeer" target="_blank">
+                <i class="bi bi-github"></i>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-6 text-center text-md-end">
+            <button id="backToTop" class="btn btn-top">↑ Back to Top</button>
+          </div>
+        </div>
+
+        <hr class="footer-line my-3" />
+        <p class="text-center mb-0">
+          &copy; 2025 Sonia Nazeer | All Rights Reserved
+        </p>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+     <!-- AOS Library JS (NEW) -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

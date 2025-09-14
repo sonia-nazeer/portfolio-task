@@ -1,0 +1,362 @@
+/* GLOBAL STyle*/
+body {
+  font-family: "Sanchez", serif;
+  background-color: #c9c0af;
+  color: #070606;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+h2,
+h3,
+h4 {
+  font-family: "Sansita One", cursive;
+  color: #070606;
+}
+
+p {
+  font-family: "Sanchez", serif;
+  line-height: 1.6;
+}
+
+/*  NAVBAR  */
+.custom-nav {
+  background-color: #333;
+  padding: 0.8rem 1rem;
+}
+
+.logo {
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.navbar-nav .nav-link {
+  color: #fff;
+  font-size: 1rem;
+  margin-left: 15px;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #c9c0af;
+}
+
+/*  HERO SECTION  */
+.hero-section {
+  background-color: #333;
+  padding: 3rem 1rem;
+}
+
+.hero-text h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #f5f5f5;
+}
+
+.hero-text p {
+  color: #f5f5f5;
+  margin-bottom: 2rem;
+}
+
+.profile-img {
+  height: auto;
+  aspect-ratio: 500/653;
+  border-radius: 210px;
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 100%;
+  outline: 1px solid rgba(95, 93, 93, 0.838);
+  outline-offset: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.35);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.45);
+}
+
+/*SKILLS & PROJECTS  */
+.skills-section,
+.projects-section,
+.contact-section {
+  padding: 4rem 1rem;
+  background-color: #c9c0af;
+}
+.skill-card,
+.project-card {
+  border-radius: 12px;
+  padding: 2rem 1.5rem;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+}
+
+.skill-card i {
+  color: #333;
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+}
+
+.skill-card h4,
+.project-card h4 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.skill-card:hover,
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.35);
+}
+
+.project-card {
+  background: #a89f90;
+  text-align: left;
+  padding: 1rem;
+}
+
+.project-card img {
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+.project-card p {
+  font-size: 0.95rem;
+  color: #2e2e2e;
+}
+.project-card a {
+  font-size: 0.95rem;
+  color: #333;
+  text-decoration: none;
+}
+a:hover {
+  color: #c9c0af;
+  text-decoration: underline;
+}
+
+/* Certificates Section */
+.myCertificates {
+  padding: 2rem 0;
+}
+
+.myCertificates .swiper-slide {
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.myCertificates .certificate-img {
+  max-height: 420px;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.35);
+  transition: transform 0.3s ease;
+}
+
+.myCertificates .certificate-img:hover {
+  transform: scale(1.05);
+}
+/* Pagination dots */
+.swiper-pagination-bullet {
+  background: #333 !important;
+  opacity: 0.6;
+}
+
+.swiper-pagination-bullet-active {
+  background: #070606 !important;
+  opacity: 1;
+}
+
+/* Navigation arrows */
+.swiper-button-next,
+.swiper-button-prev {
+  color: #070606 !important;
+  font-weight: bold;
+  transition: transform 0.2s ease;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  transform: scale(1.2);
+  color: #a89f90 !important;
+}
+
+/*  CONTACT SECTION  */
+.section-heading {
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.contact-title {
+  font-size: 1.5rem;
+  font-style: italic;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.contact-info p {
+  margin-bottom: 10px;
+}
+
+.contact-info hr {
+  border: none;
+  border-top: 1px solid #070606;
+  margin: 15px 0;
+}
+
+.contact-section .form-control {
+  background: #f1eee8;
+  border: 1px solid #444;
+  border-radius: 6px;
+  color: #070606;
+  font-size: 1rem;
+  padding: 12px 14px;
+  transition: border-color 0.3s ease;
+}
+
+.contact-section .form-control:focus {
+  border-color: #222;
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.1);
+}
+
+.btn-submit {
+  background-color: #3d3b35;
+  border: none;
+  border-radius: 6px;
+  color: #fff;
+  font-size: 1rem;
+  padding: 12px 32px;
+  text-transform: capitalize;
+  transition: all 0.3s ease;
+  width: 100%;
+}
+
+.btn-submit:hover {
+  background-color: rgba(7, 6, 6, 0.6);
+  transform: translateY(-2px);
+}
+.invalid-feedback {
+  font-size: 0.9rem;
+  color: #b30000;
+  margin-top: 5px;
+}
+#successMessage {
+  font-size: 1rem;
+  background-color: #d4edda;
+  border: 1px solid #c3e6cb;
+  color: #155724;
+  border-radius: 6px;
+  padding: 15px;
+}
+
+/* FOOTER */
+.footer {
+  background-color: #111;
+  color: #c9c0af;
+}
+
+.footer-icons a {
+  color: #c9c0af;
+  font-size: 1.5rem;
+  margin-right: 15px;
+  transition: color 0.3s ease;
+}
+
+.footer-icons a:hover {
+  color: #f5f5f5;
+}
+.btn-top {
+  background-color: #c9c0af; /* beige */
+  color: #070606;
+  font-size: 0.9rem;
+  padding: 6px 16px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.btn-top:hover {
+  background-color: #a89f90;
+  color: #f5f5f5;
+}
+
+.footer-line {
+  background-color: #c9c0af;
+  border: none;
+  height: 1px;
+  opacity: 0.4;
+}
+/* =======================
+   DARK MODE STYLES
+   ======================= */
+body.dark-mode {
+  background-color: #111; /* body bg black */
+  color: #f5f5f5;
+}
+
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4,
+body.dark-mode p {
+  color: #f5f5f5;
+}
+
+body.dark-mode .skills-section,
+body.dark-mode .projects-section,
+body.dark-mode .contact-section,
+body.dark-mode .custom-nav,
+body.dark-mode .hero-section {
+  background-color: #1c1c1c;
+  color: #f5f5f5;
+}
+
+body.dark-mode .skill-card,
+body.dark-mode .project-card {
+  background: #a89f90;
+  color: beige;
+}
+
+body.dark-mode .skill-card i {
+  color: beige;
+}
+
+body.dark-mode .contact-section .form-control {
+  background: #333;
+  color: #f5f5f5;
+  border: 1px solid #777;
+}
+
+body.dark-mode .contact-section .form-control::placeholder {
+  color: #bbb;
+}
+
+body.dark-mode .project-card a {
+  color: beige;
+}
+body.dark-mode .project-card a:hover {
+  color: #fff;
+}
+body.dark-mode .contact-info hr {
+  border-top: 1px solid #bbb;
+}
+
+body.dark-mode .contact-info p,
+body.dark-mode .contact-info .text-muted {
+  color: #ddd !important;
+}
+body.dark-mode #refreshCaptcha.btn-outline-dark {
+  border-color: #bbb;
+  color: #ddd;
+}
+
+body.dark-mode #refreshCaptcha.btn-outline-dark:hover {
+  background-color: #ddd;
+  color: #111;
+}
+body.dark-mode #certificatesCarousel {
+  background: rgba(0, 0, 0, 0.4); /* dark mode support */
+}
